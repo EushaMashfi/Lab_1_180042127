@@ -1,4 +1,4 @@
-const Hello = () => {
+module.exports.Hello = () => {
     console.log("Hello World!");
 };
 
