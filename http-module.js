@@ -1,11 +1,12 @@
 const http = require("http");
+const fs = require("fs");
 
 const server = http.createServer((req, res) => {
   if (req.url == "/") {
     res.write("<H1>Base URL</H1>");
     res.end();
   } else if (req.url == "/home") {
-    res.write("<H1>Home Page</H1>");
+    res.write("<H1>Home URL</H1>");
     res.end();
   } else {
     res.write("<H1>Doesn't Exist</H1><a href = '/'>Go to Base</a>");
