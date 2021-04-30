@@ -1,20 +1,18 @@
-const HelloFunc = require('./helloWorld');
+const HelloFunc = require("./helloWorld");
 
 //console.log(HelloFunc.name);
 
 //setInterval
 
-setInterval(()=>{
-    HelloFunc.Hello();
+setInterval(() => {
+  HelloFunc.Hello();
 }, 1000);
-
 
 //setTimeout
 
-setTimeout(()=>{
-    console.log(HelloFunc.name);
+setTimeout(() => {
+  console.log(HelloFunc.name);
 }, 5000);
-
 
 //Local Module
 //Global Module
